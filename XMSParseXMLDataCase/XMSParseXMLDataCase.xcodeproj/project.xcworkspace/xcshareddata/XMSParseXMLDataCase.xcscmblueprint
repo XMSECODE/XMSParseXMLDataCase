@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3FAD90E8DF51EB7B06EE01A59CC47451ACB72C1A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3FAD90E8DF51EB7B06EE01A59CC47451ACB72C1A" : 9223372036854775807,
+    "E4A89352C21A59E0DB1F12B820ACDB98C0D0EE40" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ED9686A3-F6A8-498B-BFC5-B93A6796C0FF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3FAD90E8DF51EB7B06EE01A59CC47451ACB72C1A" : "XMLData\/",
+    "E4A89352C21A59E0DB1F12B820ACDB98C0D0EE40" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "XMSParseXMLDataCase",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "XMSParseXMLDataCase\/XMSParseXMLDataCase.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/XMS2016\/XMSParseXMLDataCase.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3FAD90E8DF51EB7B06EE01A59CC47451ACB72C1A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/XMS2016\/XMSParseXMLDataCase.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E4A89352C21A59E0DB1F12B820ACDB98C0D0EE40"
+    }
+  ]
+}
