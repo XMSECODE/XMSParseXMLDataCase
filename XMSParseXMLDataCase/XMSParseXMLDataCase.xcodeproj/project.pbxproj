@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042343641DDB828C00F1CE5D /* loadXMLData.m in Sources */ = {isa = PBXBuildFile; fileRef = 042343631DDB828C00F1CE5D /* loadXMLData.m */; };
 		04FA1CF11DB52B7400329490 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FA1CF01DB52B7400329490 /* main.m */; };
 		04FA1CF41DB52B7400329490 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FA1CF31DB52B7400329490 /* AppDelegate.m */; };
 		04FA1CFA1DB52B7400329490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FA1CF81DB52B7400329490 /* Main.storyboard */; };
 		04FA1CFC1DB52B7400329490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA1CFB1DB52B7400329490 /* Assets.xcassets */; };
 		04FA1CFF1DB52B7400329490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FA1CFD1DB52B7400329490 /* LaunchScreen.storyboard */; };
-		04FA1D091DB52BA900329490 /* loadXMLData.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FA1D081DB52BA900329490 /* loadXMLData.m */; };
 		04FA1D0C1DB52BB600329490 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FA1D0B1DB52BB600329490 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042343621DDB828C00F1CE5D /* loadXMLData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadXMLData.h; sourceTree = "<group>"; };
+		042343631DDB828C00F1CE5D /* loadXMLData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loadXMLData.m; sourceTree = "<group>"; };
 		04FA1CEC1DB52B7400329490 /* XMSParseXMLDataCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMSParseXMLDataCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FA1CF01DB52B7400329490 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04FA1CF21DB52B7400329490 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -25,8 +27,6 @@
 		04FA1CFB1DB52B7400329490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04FA1CFE1DB52B7400329490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04FA1D001DB52B7400329490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04FA1D071DB52BA900329490 /* loadXMLData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadXMLData.h; sourceTree = "<group>"; };
-		04FA1D081DB52BA900329490 /* loadXMLData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loadXMLData.m; sourceTree = "<group>"; };
 		04FA1D0A1DB52BB600329490 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		04FA1D0B1DB52BB600329490 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,8 +86,8 @@
 		04FA1D061DB52BA900329490 /* loadXMLData */ = {
 			isa = PBXGroup;
 			children = (
-				04FA1D071DB52BA900329490 /* loadXMLData.h */,
-				04FA1D081DB52BA900329490 /* loadXMLData.m */,
+				042343621DDB828C00F1CE5D /* loadXMLData.h */,
+				042343631DDB828C00F1CE5D /* loadXMLData.m */,
 			);
 			path = loadXMLData;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 				04FA1CF41DB52B7400329490 /* AppDelegate.m in Sources */,
 				04FA1CF11DB52B7400329490 /* main.m in Sources */,
 				04FA1D0C1DB52BB600329490 /* ViewController.m in Sources */,
-				04FA1D091DB52BA900329490 /* loadXMLData.m in Sources */,
+				042343641DDB828C00F1CE5D /* loadXMLData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +321,7 @@
 				04FA1D051DB52B7400329490 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

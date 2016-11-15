@@ -18,10 +18,4 @@ typedef void(^completeBlock)(NSArray* array);
 //解析xml二进制数据，返回数组
 +(NSArray*)loadXMLDataWithData:(NSData*)data;
 
-#pragma mark - 优化得到的结果（已自动优化一次）
-//遍历数组中的每一个元素及子元素---- 假如该数组只有一个元素且该元素替代父节点在祖父节点中的位置
--(NSMutableArray*)mergeDict:(NSMutableArray*)array;
-
-//如果数组下的字典没有相同的键则把下面的字典合并为一个字典
--(NSMutableArray*)enumerateArray:(NSMutableArray*)array;
 @end

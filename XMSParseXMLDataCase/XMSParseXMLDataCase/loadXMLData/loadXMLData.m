@@ -28,6 +28,8 @@
 //当前操作的的字典对象
 @property (nonatomic,strong) NSMutableDictionary * bodyDictionary;
 
+@property(nonatomic,assign)  BOOL  isChange;
+
 @end
 
 @implementation loadXMLData
@@ -158,9 +160,13 @@
 
 #pragma mark - 优化处理最终数据
 -(NSArray*)optimizeRootArrayM:(NSMutableArray*)array{
-    array = [self enumerateArray:array];
-    array = [self mergeDict:array];
-    array = [self enumerateArray:array];
+    self.isChange = YES;
+    do {
+        self.isChange = NO;
+        array = [self enumerateArray:array];
+        array = [self mergeDict:array];
+        [self checkArrayIsHaveEmpotyArray:array];
+    }while (self.isChange == YES);
     return array;
 }
 
@@ -169,7 +175,7 @@
     //取得数组，若数组为空则直接返回
     NSInteger lenth = array.count;
     if (lenth == 0) {
-        return nil;
+        return array;
     }
 
     //遍历元素
@@ -181,13 +187,13 @@
     }
     //数组只有一个元素则该元素替代父节点
     if (lenth == 1) {
+        self.isChange = YES;
         return array[0];
     }
     return array;
 }
 
 #pragma mark - 如果数组下的字典没有相同的键则把下面的字典合并为一个字典
-
 -(NSMutableArray*)mergeDict:(NSMutableArray*)array{
     
     NSInteger lenth = array.count;
@@ -228,17 +234,23 @@
     NSMutableDictionary* dic = [NSMutableDictionary dictionary];
     //遍历数组中的字典
     NSInteger temcount = array.count;
+    int dicCount =0;
     for (int i = 0; i < temcount; i++) {
         id obj = array[i];
         //如果是字典则添加至字典，且删除数组中的字典
         if ([obj isKindOfClass:[NSDictionary class]]) {
+            dicCount++;
             for (id key in obj) {
                 id valua = [obj objectForKey:key];
                 [dic setObject:valua forKey:key];
-            }            [array removeObject:obj];
+            }
+            [array removeObject:obj];
             i--;
             temcount--;
         }
+    }
+    if (dicCount > 1) {
+        self.isChange = YES;
     }
     //最后数组如果只有一个元素则直接添加进数组即可
     if (dic.count == 0) {
@@ -270,5 +282,27 @@
     return isSame;
 }
 
-
+#pragma mark - 移除数组下的空的数组元素
+-(void)checkArrayIsHaveEmpotyArray:(NSMutableArray*)array{
+    NSUInteger count = array.count;
+    for (NSUInteger i = 0; i < count; i++) {
+        if ([array[i] isKindOfClass:[NSArray class]]) {
+            BOOL isHaveRemove = [self removeEmpotyArray:array[i] andSubArray:array];
+            if (isHaveRemove) {
+                NSUInteger newCount = array.count;
+                i = i - count - newCount;
+                count = newCount;
+                self.isChange = YES;
+            }
+        }
+    }
+}
+-(BOOL)removeEmpotyArray:(NSMutableArray*)subArray andSubArray:(NSMutableArray*)supArray{
+    if (subArray.count == 0) {
+        [supArray removeObject:subArray];
+        return YES;
+    }
+    [self checkArrayIsHaveEmpotyArray:subArray];
+    return NO;
+}
 @end
