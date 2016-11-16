@@ -24,14 +24,11 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-[super viewDidLoad];
-        NSString* urlStr = test01XMLURLString;
-//    NSString* urlStr = test05XMLURLString;
-//    NSString* urlStr = test06XMLURLString;
-//    NSString* urlStr = test07XMLURLString;
-    
+    [super viewDidLoad];
+    NSString* urlStr = test07XMLURLString;
     [loadXMLData loadXMLDataWithUrlString:urlStr withCompleteBlock:^(NSArray *array) {
         NSLog(@"%@",array);
+
     }];
 }
 
