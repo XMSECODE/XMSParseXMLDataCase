@@ -9,13 +9,13 @@
 #import "ViewController.h"
 #import "loadXMLData.h"
 
-#define test01XMLURLString @"https://raw.githubusercontent.com/XMS2016/XMLFile/master/attrs.xml"
-#define test02XMLURLString @"https://raw.githubusercontent.com/XMS2016/XMLFile/master/book.xml"
+#define test01XMLURLString @"https://raw.githubusercontent.com/XMSECODE/XMLFile/master/attrs.xml"
+#define test02XMLURLString @"https://raw.githubusercontent.com/XMSECODE/XMLFile/master/book.xml"
 #define test03XMLURLString @"http://www.runoob.com/try/xml/plant_catalog.xml"
 #define test04XMLURLString @"http://www.runoob.com/try/xml/cd_catalog.xml"
 #define test05XMLURLString @"http://www.runoob.com/try/xml/simple.xml"
-#define test06XMLURLString @"https://raw.githubusercontent.com/XMS2016/XMLFile/master/中国省市表.xml"
-#define test07XMLURLString @"https://raw.githubusercontent.com/XMS2016/XMLFile/master/中国天气网城市代码表.xml"
+#define test06XMLURLString @"https://raw.githubusercontent.com/XMSECODE/XMLFile/master/中国省市表.xml"
+#define test07XMLURLString @"https://raw.githubusercontent.com/XMSECODE/XMLFile/master/中国天气网城市代码表.xml"
 
 @interface ViewController ()
 
